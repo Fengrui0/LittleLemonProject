@@ -1,38 +1,347 @@
-.App {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+.logo {
+  height: 48px;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+
+.nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #495e57;
+  color: white;
+  padding: 3rem 4rem;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h2 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.reserve-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #f4ce14;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.hero-image img {
+  height: 300px;
+  border-radius: 16px;
+}
+
+/* HIGHILIGHT */
+/* 区块整体样式 */
+.highlight-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 顶部标题和按钮布局 */
+.highlight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.highlight-header h2 {
+  font-size: 2rem;
+}
+
+.online-menu-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.online-menu-btn:hover {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.highlight-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.highlight-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.highlight-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.highlight-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.highlight-title h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.highlight-title .price {
+  color: #888;
+  font-weight: bold;
+}
+
+.delivery-container {
+  margin-top: auto;
+}
+
+.delivery {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 16px;
+  background-color: #f4ce14;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.delivery:hover {
+  background-color: #e0b500;
+  color: #000;
+}
+
+
+/* TESTINOMIALS */
+.testimonials-section {
+  background-color: #ddd;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testimonials-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.testimonial-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.testimonial-card .rating {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ABOUT */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-text h2 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+.about-images {
+  flex: 1;
+  position: relative;
+  height: 300px;
+}
+
+.about-img {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.img-back {
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.img-front {
+  left: 60px;
+  top: 40px;
+  z-index: 2;
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: #eeeeee;
+  padding: 3rem 2rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.footer-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
+  min-width: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-column h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #495e57;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-column a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
 }

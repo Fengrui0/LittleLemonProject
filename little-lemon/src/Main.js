@@ -1,8 +1,14 @@
+import Hero from './Hero';
+import Highlight from './Highlight';
+import Testimonials from './Testimonials';
+import About from './About';
 function Main(){
     return(
-        <main>
-            <h1>Welcome to Little Lemon</h1>
-            <p>Enjoy fresh Mediterranean flavors in the heart of your city.</p>
+        <main className="container">
+            <Hero />
+            <Highlight />
+            <Testimonials />
+            <About />
         </main>
     )
 }

@@ -1,7 +1,12 @@
+import logo from './Logo.svg';
+import Nav from './Nav';
 function Header(){
     return(
-        <header>
-            <img src="Logo .svg" alt="Little Lemon Logo" />
+        <header className="header">
+            <a href="/">
+                <img src={logo} alt="Little Lemon Logo" />
+            </a>
+            <Nav />
         </header>
     )
 }
