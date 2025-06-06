@@ -345,3 +345,68 @@
 .footer-column a:hover {
   text-decoration: underline;
 }
+/* Booking Page */
+.booking-page {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff8f0; /* warm neutral background */
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2e2e2e;
+  font-family: 'Georgia', serif;
+}
+
+
+/* Booking Form */
+.booking-form {
+  display: grid;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.booking-form label {
+  font-weight: 600;
+  color: #4b4b4b;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fefefe;
+}
+
+.booking-form button {
+  padding: 14px;
+  background-color: #f4ce14;
+  color: #333333;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.booking-form button:hover {
+  background-color: #e3bc10;
+  color: #111;
+}

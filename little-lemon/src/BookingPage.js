@@ -1,9 +1,11 @@
-function BookingPage() {
+import BookingForm from './BookingForm';
+
+function BookingPage({ availableTimes, dispatch }) {
   return (
-    <div className="booking-page">
+    <section className="booking-page">
       <h1>Reserve a Table</h1>
-      <p>Reservation form will go here.</p>
-    </div>
+      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+    </section>
   );
 }
 
