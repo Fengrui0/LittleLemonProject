@@ -1,20 +1,17 @@
 import {useState} from "react";
 
-function BookingForm({ availableTimes = [], dispatch = () => {} }) {
+function BookingForm({ availableTimes = [], dispatch = () => {}, onSubmit = () => {} }) {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('Birthday');
 
-  const handleDateChange = (e) => {
-    const newDate = e.target.value;
-    setDate(newDate);
-    dispatch({ type: 'date-change', date: newDate });
-  };
-  const handleSubmit = () => {
-    console.log({ date, time, guests, occasion });
+  const handleSubmit = (e) => {
+    e.preventDefault(); // prevent default form submission
+    const booking = { date, time, guests, occasion };
+    onSubmit(booking);
     alert('Booking submitted!');
-  }
+  };
 
   return (
     <form className="booking-form" onSubmit={handleSubmit}>
@@ -23,7 +20,10 @@ function BookingForm({ availableTimes = [], dispatch = () => {} }) {
         type="date"
         id="res-date"
         value={date}
-        onChange={handleDateChange}
+        onChange={(e) => {
+          setDate(e.target.value);
+          dispatch({ date: e.target.value });
+        }}
         required
       />
 
