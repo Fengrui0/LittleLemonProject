@@ -2,7 +2,7 @@ import BookingForm from './BookingForm';
 import { useNavigate } from 'react-router-dom';
 import { submitAPI } from './api';
 
-function BookingPage({ availableTimes, dispatch, bookingData, addBooking }) {
+function BookingPage({ availableTimes = [], dispatch = () => {}, bookingData =[], addBooking = () => {} }) {
   const navigate = useNavigate();
 
   const handleFormSubmit = data => {
