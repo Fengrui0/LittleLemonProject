@@ -1,4 +1,6 @@
 import Salad from "./greek salad.jpg";
+import { Link } from 'react-router-dom';
+
 function Hero() {
   return (
     <section className="hero">
@@ -9,7 +11,7 @@ function Hero() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.
         </p>
-        <a href="/reservations" className="reserve-btn">Reserve a Table</a>
+        <Link to="/booking" className="reserve-btn">Reserve a Table</Link>
 
       </div>
       <div className="hero-image">
