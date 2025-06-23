@@ -45,7 +45,7 @@
 
 ```bash
 # 1. Clone
-git clone https://github.com/<username>/little-lemon.git
+git clone https://github.com/Fengrui0/little-lemon.git
 cd little-lemon
 
 # 2. Install deps (Node 20 LTS)
